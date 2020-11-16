@@ -39,7 +39,7 @@
       display: block;
       width: 48px;
       height: 50px;
-      background-image: url(../../img/sprite-markers.png);
+      background-image: url(../img/sprite-markers.png);
       margin-right: 25px
     }
 
@@ -177,7 +177,7 @@
 .programs {
   margin: -80px 0 0 0;
   padding: 0 4% 165px 1%;
-  background-image: url(../../bg_prog2.png), url(../img/bg_programs1.png);
+  background-image: url(../bg_prog2.png), url(../img/bg_programs1.png);
   background-repeat: no-repeat;
   background-position: bottom right, bottom 15px left;
   position: relative;
@@ -326,7 +326,7 @@
   .programs__slider-item1 {
     display: flex;
     justify-content: space-between;
-    background-image: url(../../img/img_teacher.png);
+    background-image: url(../img/img_teacher.png);
     background-size: 72%;
 
 
@@ -338,12 +338,12 @@
 
   .programs__slider-item2 {
     background-size: 72%;
-    background-image: url(../../img/img_tongue.png);
+    background-image: url(../img/img_tongue.png);
   }
 
   .programs__slider-item3 {
     background-size: 72%;
-    background-image: url(../../img/img_friends.png);
+    background-image: url(../img/img_friends.png);
   }
 
   .programs__slider-item4 {
@@ -752,7 +752,7 @@ figure {
   width: 811px;
   height: 609px;
   margin: -10px 0 0 0;
-  background-image: url(../../img/map_logo.png), url(../../img/map.jpg);
+  background-image: url(../img/map_logo.png), url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: 60px auto, cover;
   background-position: top 290px left 232px, center;
