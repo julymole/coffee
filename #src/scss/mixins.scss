@@ -1,0 +1,75 @@
+@mixin txt-nav {
+  font-family: 'ubuntu', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: $color-txt;
+}
+
+@mixin txt-links {
+  font-family: 'ubuntu', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  color: $color-links;
+  text-decoration: none;
+}
+
+@mixin btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-sec;
+  font-family: 'ubuntu', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+
+}
+
+@mixin txt-bold {
+  font-family: 'ubuntu', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-txt;
+}
+
+@mixin h {
+  font-family: 'ubuntu', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: $color-txt;
+}
+
+@mixin h-before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  margin-bottom: 19px;
+  background-color: $color-sec;
+}
+@mixin content-txt {
+  font-family: 'ubuntu', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-txt;
+}

@@ -1,0 +1,185 @@
+.footer {
+  max-width: 100%;
+  padding: 25px 1%;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0 0 0;
+  align-items: center;
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    margin-top: 0;
+    list-style-type: none;
+
+
+  }
+
+  nav li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 21px;
+      height: 1px;
+      margin-left: 25px;
+      transform: rotate(-45deg);
+      background-color: #BCCBDE;
+    }
+  }
+
+  nav a {
+    height: 32px;
+    text-decoration: none;
+    @include txt_nav;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 32px;
+      -webkit-transform: skew(-45deg);
+      -moz-transform: skew(-45deg);
+      -o-transform: skew(-45deg);
+      position: absolute;
+      top: -4px;
+      left: -20px;
+      z-index: -2;
+    }
+
+  }
+  nav li:nth-of-type(1) a::before {
+    width: 110px;
+  }
+  nav li:nth-of-type(2) a::before {
+    width: 90px;
+  }
+  nav li:nth-of-type(3) a::before {
+    width: 230px;
+  }
+  nav li:nth-of-type(4) a::before {
+    width: 230px;
+  }
+  nav li:nth-of-type(5) a::before {
+    width: 125px;
+  }
+  
+  nav a:focus:before {
+    background-color: #FFEDD1;
+  }
+  nav a:hover:before {
+    background-color: rgba(255, 237, 209, 0.4);
+  }
+
+  button {
+    @include btn;
+    margin: 0 0 18px 21.9%;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: center;
+  margin: -3px 37% 25px 0;
+}
+
+.footer__contact-links {
+  display: flex;
+  justify-content: space-between;
+  width: 565px;
+
+  a {
+    @include txt-links;
+    display: flex;
+
+
+    &::before {
+      content: "";
+      display: block;
+      width: 17px;
+      height: 17px;
+      padding-right: 10px;
+      background-image: url(../img/sprites_mail.png);
+      background-size: 70px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(1):before {
+      background-position: -40px -8px;
+    }
+
+    &:nth-of-type(2):before {
+      background-position: -2px -7px;
+    }
+
+    &:nth-of-type(3):before {
+      background-position: -12px -43px;
+    }
+
+  }
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin-left: 20px;
+
+  a {
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 18px;
+      background-image: url(../../img/sprites_socials.png);
+      background-size: 40px;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-of-type(1):before {
+      background-position: -8px -38px;
+    }
+
+    &:nth-of-type(2):before {
+      background-position: -8px -7px;
+    }
+  }
+}
+
+.footer__row-tiny {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    @include content-txt;
+    color: rgba(37, 37, 37, 0.3);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1800px) {
+  .footer__row {
+    button {
+      margin: 0 0 18px 0;
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .footer__row {
+    nav {
+      display: none;
+    }
+  }
+}
