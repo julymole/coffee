@@ -511,7 +511,7 @@ body {
   display: block;
   width: 25px;
   height: 18px;
-  background-image: url(../../img/sprites_socials.png);
+  background-image: url(../img/sprites_socials.png);
   background-size: 40px;
   background-repeat: no-repeat;
 }
@@ -732,7 +732,7 @@ body {
   display: block;
   width: 48px;
   height: 50px;
-  background-image: url(../../img/sprite-markers.png);
+  background-image: url(../img/sprite-markers.png);
   margin-right: 25px;
 }
 
@@ -827,7 +827,7 @@ body {
 .programs {
   margin: -80px 0 0 0;
   padding: 0 4% 165px 1%;
-  background-image: url(../../bg_prog2.png), url(../img/bg_programs1.png);
+  background-image: url(../bg_prog2.png), url(../img/bg_programs1.png);
   background-repeat: no-repeat;
   background-position: bottom right, bottom 15px left;
   position: relative;
@@ -1006,7 +1006,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-image: url(../../img/img_teacher.png);
+  background-image: url(../img/img_teacher.png);
   background-size: 72%;
 }
 
@@ -1017,12 +1017,12 @@ body {
 
 .programs__slider .programs__slider-item2 {
   background-size: 72%;
-  background-image: url(../../img/img_tongue.png);
+  background-image: url(../img/img_tongue.png);
 }
 
 .programs__slider .programs__slider-item3 {
   background-size: 72%;
-  background-image: url(../../img/img_friends.png);
+  background-image: url(../img/img_friends.png);
 }
 
 .programs__slider .programs__slider-item4 {
@@ -1405,7 +1405,7 @@ figure figcaption span {
   width: 811px;
   height: 609px;
   margin: -10px 0 0 0;
-  background-image: url(../../img/map_logo.png), url(../../img/map.jpg);
+  background-image: url(../img/map_logo.png), url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: 60px auto, cover;
   background-position: top 290px left 232px, center;
@@ -1629,7 +1629,7 @@ figure figcaption span {
   display: block;
   width: 25px;
   height: 18px;
-  background-image: url(../../img/sprites_socials.png);
+  background-image: url(../img/sprites_socials.png);
   background-size: 40px;
   background-repeat: no-repeat;
 }
@@ -2088,19 +2088,19 @@ figure figcaption span {
 
 .webp .header__contact-links a::before { background-image: url(../img/sprites_mail.webp); }
 
-.webp .header__socials a::before { background-image: url(../../img/sprites_socials.webp); }
+.webp .header__socials a::before { background-image: url(../img/sprites_socials.webp); }
 
 .webp .video { background-image: url(../img/bg_video2.webp), url(../img/bg_video1.webp); }
 
-.webp .video__text ul li::before { background-image: url(../../img/sprite-markers.webp); }
+.webp .video__text ul li::before { background-image: url(../img/sprite-markers.webp); }
 
-.webp .programs { background-image: url(../../bg_prog2.webp), url(../img/bg_programs1.webp); }
+.webp .programs { background-image: url(../bg_prog2.webp), url(../img/bg_programs1.webp); }
 
-.webp .programs__slider .programs__slider-item1 { background-image: url(../../img/img_teacher.webp); }
+.webp .programs__slider .programs__slider-item1 { background-image: url(../img/img_teacher.webp); }
 
-.webp .programs__slider .programs__slider-item2 { background-image: url(../../img/img_tongue.webp); }
+.webp .programs__slider .programs__slider-item2 { background-image: url(../img/img_tongue.webp); }
 
-.webp .programs__slider .programs__slider-item3 { background-image: url(../../img/img_friends.webp); }
+.webp .programs__slider .programs__slider-item3 { background-image: url(../img/img_friends.webp); }
 
 .webp .programs__slider .programs__slider-item4 { background-image: url(../img/img_boat.webp); }
 
@@ -2110,8 +2110,8 @@ figure figcaption span {
 
 .webp .aboutus__contact-links a::before { background-image: url(../img/sprite_aboutus.webp); }
 
-.webp .aboutus__map { background-image: url(../../img/map_logo.webp), url(../../img/map.webp); }
+.webp .aboutus__map { background-image: url(../img/map_logo.webp), url(../img/map.webp); }
 
 .webp .footer__contact-links a::before { background-image: url(../img/sprites_mail.webp); }
 
-.webp .footer__socials a::before { background-image: url(../../img/sprites_socials.webp); }
+.webp .footer__socials a::before { background-image: url(../img/sprites_socials.webp); }
