@@ -73,3 +73,19 @@
   line-height: 24px;
   color: $color-txt;
 }
+
+.popup-link:hover {
+  border: 4px solid #5583DD;
+}
+.popup-link:active {
+  border: 4px solid  #3067D1;
+  background: #1E52B8;
+  outline: none;
+  color: #A3BAE8;
+}
+.popup-link:focus {
+  border: 4px solid #3472E9;
+  background: #3067D1;
+  color: #FFFFFF;
+  outline: none;
+}

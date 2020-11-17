@@ -54,10 +54,10 @@
           <li>Комфортное пространство</li>
           <li>В самом центре города</li>
         </ul>
-        <button>Записаться</button>
+        <button class="popup-link" type="button">Записаться</button>
       </div>
       <div class="video__wrapper">
-        <video src="#" type="video/mp4" loop muted poster="img/rectangle.png" width="871" height="496"></video>
+      <iframe class="video__iframe" width="811" height="456" src="https://www.youtube.com/embed/PVLt4tmbOkM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="video__btn"></div>
       </div>
     </section>
@@ -150,7 +150,7 @@
               <img src="img/aboutus2_1.jpg" alt="занятия в паре" width="692" height="389">
             </div>
          </div>
-         <!--  <img class="aboutus__slider-large" src="img/aboutus1.jpg" alt="индивидуальные занятия" width="715" height="430"> -->
+         
           <div class="aboutus__slider-small">
             <div class="aboutus__slider-small-item">
               <img src="img/aboutus1_1.jpg" alt="индивидуальные занятия" width="93" height="52">
@@ -173,10 +173,34 @@
           </div>
         </div>
       </div>
-      <a href="#" class="aboutus__map"></a>
+      <div class="aboutus__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa8a586a467a3e2363c28091508d02afe97d41a6d85ff64cd817b0ad0d3ce8d25&amp;width=811&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script></div>
     </section>
   </main>
   @@include('_footer.html')
+  
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="" class="popup__close">
+          <div></div>
+        </a>
+        <div class="popup__title">Напишите нам</div>
+         <form id="popup__form" action="#" method="post">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <input type="text">
+          <label>
+            <input type="checkbox" required>
+            <span class="newcheckbox"></span>
+            <span>Я согласен (согласна) на обработку моих персональных данных</span>
+          </label>
+          <input type="submit" value="Отправить сообщение">
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/script.min.js"></script>

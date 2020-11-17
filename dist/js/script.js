@@ -3014,9 +3014,19 @@ $(document).ready(function () {
   
   $('.header__burger').click(function(event){
     $('.header__burger, .container').toggleClass('active');
+    $('.header__row-logo').slideToggle(2000);
   });
   
   
+  $('.video__wrapper').click(function(event){
+    $('.video__wrapper, .video__btn').toggleClass('click');
+    var src = $('.video__iframe').attr('src');
+    $('.video__iframe').attr('src', src + '?autoplay=1');
+  })
+  
+  $('.popup-link').click(function(event){
+    $('.popup').addClass('open');
+  })
   
   $('.programs__slider').slick({
     arrows: true,
@@ -3059,7 +3069,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
+          //centerMode: true,
           //centerPadding: '60px',
         }
 
@@ -3095,6 +3105,28 @@ $(document).ready(function () {
           slidesToShow: 2,
           centerMode: true,
           leftPadding: '60px',
+        }
+      },{
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 2,
+          //centerMode: true,
+          //leftPadding: '60px',
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '90px',
+        }
+      },{
+        breakpoint: 472,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '20px',
         }
       }
     ]
