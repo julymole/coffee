@@ -2216,7 +2216,7 @@ figure figcaption span {
     align-items: center;
     position: absolute;
     top: 430px;
-    left: 39%;
+    left: 38vw;
     height: 170px;
   }
 
@@ -2225,7 +2225,7 @@ figure figcaption span {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 160px;
+    width: 155px;
     height: 120px;
   }
 
@@ -2233,6 +2233,13 @@ figure figcaption span {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .header .header__row nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .header .header__row ul {
@@ -2243,7 +2250,7 @@ figure figcaption span {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 320px;
+    height: 270px;
   }
 
   .header .header__row nav li::after {
@@ -2255,7 +2262,7 @@ figure figcaption span {
   }
 
   .header .header__row button {
-    margin: 0;
+    margin: 20px 0 0 0;
   }
 
   .header .container.active {
@@ -2397,6 +2404,12 @@ figure figcaption span {
   .footer__row-tiny a:nth-of-type(2) {
     width: 180px;
     text-align: end;
+  }
+}
+
+@media (max-width: 830px) and (max-width: 520px) {
+  .header .header__contact {
+    left: 30vw;
   }
 }
 

@@ -318,12 +318,15 @@ body {
       align-items: center;
       position: absolute;
       top: 430px;
-      left: 39%;
+      left: 38vw;
       height: 170px;
+      @media (max-width: 520px) {
+        left: 30vw;
+      }
     }
     .header__contact-links {
       flex-direction: column;
-      width: 160px;
+      width: 155px;
       height: 120px;
       a:nth-of-type(2):before {
         //background-position: -8px -7px;
@@ -332,11 +335,14 @@ body {
 
     .header__row {
       justify-content: center;
+      nav {
+        flex-direction: column;
+      }
 
       ul {
         flex-direction: column;
         justify-content: space-between;
-        height: 320px;
+        height: 270px;
       }
 
       nav li::after {
@@ -346,7 +352,7 @@ body {
         font-size: 15px;
       }
       button {
-        margin: 0;
+        margin: 20px 0 0 0;
       }
     }
 
