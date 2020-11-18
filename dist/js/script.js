@@ -3036,7 +3036,7 @@ $(document).ready(function () {
     slidesToScroll: 4,
     speed: 1500,
     initialSlide: 0,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 3000,
     pauseOnFocus: true,
     pauseOnHover: true,

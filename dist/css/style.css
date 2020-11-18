@@ -389,6 +389,7 @@ template {
 
 .popup-link:hover {
   border: 4px solid #5583DD;
+  cursor: pointer;
 }
 
 .popup-link:active {
@@ -403,6 +404,10 @@ template {
   background: #3067D1;
   color: #FFFFFF;
   outline: none;
+}
+
+a {
+  cursor: pointer;
 }
 
 @font-face {
@@ -822,19 +827,19 @@ body {
 .video__wrapper::after {
   content: '';
   display: block;
-  width: 107%;
-  height: 101%;
+  width: 106.5%;
+  height: 105%;
   background-image: url(../img/rectangle.png);
   background-size: 101%;
   background-repeat: no-repeat;
   position: absolute;
-  top: -10px;
-  left: -27px;
+  top: -9px;
+  left: -25px;
 }
 
 .video__wrapper .video__iframe {
-  width: 55vw;
-  height: 90%;
+  width: 42vw;
+  height: 92%;
   border: 0;
 }
 
@@ -1068,8 +1073,8 @@ body {
 .programs__slider .programs__slider-item4:hover .programs__slider-subtitle:after {
   content: '';
   display: block;
-  width: 90%;
-  height: 148px;
+  width: 93%;
+  height: 140px;
   background: #D13058;
   border-radius: 12px;
   position: absolute;
@@ -1100,7 +1105,7 @@ body {
 }
 
 .programs__slider .programs__slider-item2 .programs__slider-subtitle {
-  height: 450px;
+  height: 470px;
 }
 
 .programs__slider .programs__slider-item3 {
@@ -1746,6 +1751,7 @@ figure figcaption span {
 }
 
 .popup {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1840,12 +1846,14 @@ figure figcaption span {
   left: 6px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1830px) {
   .video__wrapper .video__iframe {
     width: 45vw;
-    height: 80%;
+    height: 83%;
   }
+}
 
+@media (max-width: 1800px) {
   .teachers {
     padding: 0 2% 0 4%;
   }
@@ -1919,7 +1927,7 @@ figure figcaption span {
 
   .video__wrapper .video__iframe {
     width: 40vw;
-    height: 72%;
+    height: 70%;
   }
 
   .video__wrapper .video__btn {
@@ -1991,9 +1999,14 @@ figure figcaption span {
     left: 18%;
   }
 
+  .video__wrapper::after {
+    left: -26px;
+    width: 107%;
+  }
+
   .video__wrapper .video__iframe {
-    width: 64vw;
-    height: 33vw;
+    width: 63vw;
+    height: 35vw;
   }
 
   .video__wrapper .video__btn {
@@ -2032,7 +2045,7 @@ figure figcaption span {
     width: 94%;
     left: 30px;
     height: 450px;
-    bottom: 28.5%;
+    bottom: 26%;
   }
 
   .programs h2 {
@@ -2046,13 +2059,31 @@ figure figcaption span {
   .programs__slider .programs__slider-item4 {
     font-size: 23px;
     width: 266px;
-    height: 304px;
+    height: 440px;
     background-position: left 20px top 40px;
   }
 
+  .programs__slider .programs__slider-item1:hover .programs__slider-subtitle:after,
+  .programs__slider .programs__slider-item2:hover .programs__slider-subtitle:after,
+  .programs__slider .programs__slider-item3:hover .programs__slider-subtitle:after,
+  .programs__slider .programs__slider-item4:hover .programs__slider-subtitle:after {
+    content: none;
+  }
+
   .programs__slider .programs__slider-subtitle {
+    color: black;
     width: 300px;
+    height: 390px;
+  }
+
+  .programs__slider .programs__slider-item2 .programs__slider-subtitle {
+    height: 430px;
+  }
+
+  .programs__slider .programs__slider-item3 .programs__slider-subtitle,
+  .programs__slider .programs__slider-item4 .programs__slider-subtitle {
     height: 400px;
+    margin-left: 3px;
   }
 
   .slick-next {
@@ -2473,7 +2504,7 @@ figure figcaption span {
   }
 
   .video__wrapper {
-    top: 29%;
+    top: 30%;
   }
 
   .video__wrapper .video__btn {

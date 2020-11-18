@@ -81,19 +81,19 @@
   &::after {
     content: '';
     display: block;
-    width: 107%;
-    height: 101%;
+    width: 106.5%;
+    height: 105%;
     background-image: url(../img/rectangle.png);
     background-size: 101%;
     background-repeat: no-repeat;
     position: absolute;
-    top: -10px;
-    left: -27px;
+    top: -9px;
+    left: -25px;
   }
 
   .video__iframe {
-    width: 55vw;
-    height: 90%;
+    width: 42vw;
+    height: 92%;
     border: 0;
 
   }
@@ -142,11 +142,11 @@
   }
 }
 
-@media (max-width:1800px) {
+@media (max-width:1830px) {
   .video__wrapper {
     .video__iframe {
       width: 45vw;
-      height: 80%;
+      height: 83%;
     }
   }
 }
@@ -154,10 +154,11 @@
 @media (max-width:1520px) {
   .video__wrapper {
     margin-top: 50px;
+    
 
     .video__iframe {
       width: 40vw;
-      height: 72%;
+      height: 70%;
     }
 
     .video__btn {
@@ -205,10 +206,14 @@
     position: absolute;
     top: 22%;
     left: 18%;
+    &::after {
+      left: -26px;
+      width: 107%;
+    }
 
     .video__iframe {
-      width: 64vw;
-      height: 33vw;
+      width: 63vw;
+      height: 35vw;
     }
 
     .video__btn {
@@ -270,7 +275,7 @@
   }
 
   .video__wrapper {
-    top: 29%;
+    top: 30%;
 
     .video__btn {
       top: -15%;
@@ -456,8 +461,8 @@
     &:hover .programs__slider-subtitle:after {
       content: '';
       display: block;
-      width: 90%;
-      height: 148px;
+      width: 93%;
+      height: 140px;
       background: #D13058;
       border-radius: 12px;
       position: absolute;
@@ -484,7 +489,7 @@
     background-size: 72%;
     background-image: url(../img/img_tongue.png);
     .programs__slider-subtitle {
-      height: 450px;
+      height: 470px;
     }
   }
 
@@ -532,7 +537,7 @@
       width: 94%;
       left: 30px;
       height: 450px;
-      bottom: 28.5%;
+      bottom: 26%;
     }
 
     h2 {
@@ -549,13 +554,31 @@
     .programs__slider-item4 {
       font-size: 23px;
       width: 266px;
-      height: 304px;
+      height: 440px;
       background-position: left 20px top 40px;
+      
+      &:hover .programs__slider-subtitle:after{
+       content: none;
+      }
     }
+    
 
     .programs__slider-subtitle {
+      color: black;
       width: 300px;
-      height: 400px;
+      height: 390px;
+    }
+    .programs__slider-item2 {
+      .programs__slider-subtitle {
+        height: 430px;
+      }
+    }
+    .programs__slider-item3,
+    .programs__slider-item4  {
+      .programs__slider-subtitle {
+        height: 400px;
+        margin-left: 3px;
+      }
     }
   }
 
