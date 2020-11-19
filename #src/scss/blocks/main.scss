@@ -154,7 +154,7 @@
 @media (max-width:1520px) {
   .video__wrapper {
     margin-top: 50px;
-    
+
 
     .video__iframe {
       width: 40vw;
@@ -206,6 +206,7 @@
     position: absolute;
     top: 22%;
     left: 18%;
+
     &::after {
       left: -26px;
       width: 107%;
@@ -288,6 +289,7 @@
     .video__text {
       ul {
         font-size: 15px;
+
         li {
           width: 300px;
         }
@@ -455,9 +457,11 @@
     &:focus {
       outline: none;
     }
+
     &:hover {
       color: #ffffff;
     }
+
     &:hover .programs__slider-subtitle:after {
       content: '';
       display: block;
@@ -488,6 +492,7 @@
   .programs__slider-item2 {
     background-size: 72%;
     background-image: url(../img/img_tongue.png);
+
     .programs__slider-subtitle {
       height: 470px;
     }
@@ -510,7 +515,7 @@
     justify-content: center;
     align-items: flex-end;
     min-width: 0;
-    
+
 
   }
 
@@ -556,25 +561,27 @@
       width: 266px;
       height: 440px;
       background-position: left 20px top 40px;
-      
-      &:hover .programs__slider-subtitle:after{
-       content: none;
+
+      &:hover .programs__slider-subtitle:after {
+        content: none;
       }
     }
-    
+
 
     .programs__slider-subtitle {
       color: black;
       width: 300px;
       height: 390px;
     }
+
     .programs__slider-item2 {
       .programs__slider-subtitle {
         height: 430px;
       }
     }
+
     .programs__slider-item3,
-    .programs__slider-item4  {
+    .programs__slider-item4 {
       .programs__slider-subtitle {
         height: 400px;
         margin-left: 3px;
@@ -668,15 +675,27 @@
       .programs__slider-item2,
       .programs__slider-item3,
       .programs__slider-item4 {
-        margin: 0 0 0 80px;
+        margin: 0 0 0 60px;
       }
 
     }
 
-    .programs__slider-subtitle {
-      height: 370px;
-      font-size: 18px;
+    .programs__slider-item1 {
+      .programs__slider-subtitle {
+        height: 310px;
+      }
     }
+
+    .programs__slider-item2,
+    .programs__slider-item3,
+    .programs__slider-item4 {
+      .programs__slider-subtitle {
+        height: 350px;
+        font-size: 18px;
+      }
+    }
+
+
   }
 }
 
@@ -909,6 +928,7 @@ figure {
     }
   }
 }
+
 @media (max-width: 600px) {
   .instagram {
     h2 {
@@ -1131,12 +1151,14 @@ figure {
     width: 100%;
   }
 }
-@media (max-width: 600px){
+
+@media (max-width: 600px) {
   .aboutus {
     h2 {
       font-size: 28px;
       width: 250px;
-      margin: 0 auto 20px; 
+      margin: 0 auto 20px;
+
       &::before {
         margin: 0 0 20px 20%;
       }

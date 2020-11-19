@@ -2598,11 +2598,17 @@ figure figcaption span {
   .programs .programs__slider .programs__slider-item2,
   .programs .programs__slider .programs__slider-item3,
   .programs .programs__slider .programs__slider-item4 {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 60px;
   }
 
-  .programs .programs__slider-subtitle {
-    height: 370px;
+  .programs .programs__slider-item1 .programs__slider-subtitle {
+    height: 310px;
+  }
+
+  .programs .programs__slider-item2 .programs__slider-subtitle,
+  .programs .programs__slider-item3 .programs__slider-subtitle,
+  .programs .programs__slider-item4 .programs__slider-subtitle {
+    height: 350px;
     font-size: 18px;
   }
 }
